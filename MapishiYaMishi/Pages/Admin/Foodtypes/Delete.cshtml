@@ -1,0 +1,23 @@
+﻿@page
+@model MishiWeb.Pages.Admin.Foodtypes.DeleteModel
+@{
+}
+
+<form method="post">
+    <div class="border p-3 mt-4">
+        <div class="row">
+            <h2 class="text-primary pl-3">Update Food Type</h2>
+        </div>
+        <input hidden asp-for="FoodType.Id" />
+        </div>
+        <div class="mb-3">
+            <label asp-for="FoodType.Name"></label>
+            <input asp-for="FoodType.Name" disabled type="text" class="form-control" />
+        </div>
+
+        <button type="submit" class="btn btn-danger" style="width:150px">Delete</button>
+        <a asp-page="Index" class="btn btn-primary" style="width:150px">Back To List</a>
+    </div>
+</form>
+
+
